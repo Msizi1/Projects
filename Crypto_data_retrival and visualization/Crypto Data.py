@@ -1,6 +1,4 @@
 #Automating data from a crypto api
-# How to use a public api
-
 import pandas as pd
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
@@ -9,7 +7,7 @@ import os
 from time import time
 from time import sleep
 
-
+#Data Collection from the API
 url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
 parameters = {
   'start':'1',
@@ -38,7 +36,7 @@ pd.set_option('display.max_columns', None)
 new_data = pd.json_normalize(data['data'])
 
 
-
+#Building an API function to automate the process when the function is called
 def api_runner():
     global new_data
 
@@ -77,7 +75,15 @@ def api_runner():
     else:
         new_data.to_csv(r"C:/Users/user/Documents/Programming/Projects/Data/Crypto_Data.csv",mode= "a", header = "column_names")
 
-api_runner()
+# Automating the process
+
+for i in range(333):
+  api_runner()
+  time.sleep(864000)
+  print("API run complete")
+exit()
+
+# Storing the data in your local device
 
 new_data2 =  pd.read_csv("C:/Users/user/Documents/Programming/Projects/Data/Crypto_Data.csv")
 new_data3 = new_data2.groupby('name', sort= False)[["quote.USD.percent_change_1h","quote.USD.percent_change_24h","quote.USD.percent_change_7d","quote.USD.percent_change_30d","quote.USD.percent_change_60d","quote.USD.percent_change_90d"]].mean()
