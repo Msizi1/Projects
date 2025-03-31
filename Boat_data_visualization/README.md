@@ -18,10 +18,10 @@ This project focuses on cleaning and visualizing a dataset related to boats. We 
 ### 3. Data Transformation in Python
 - Loaded the **SQL file** into Python.
 - Converted the dataset into an **Excel (.xlsx) file**.
-- Created **three pivot tables** to summarize key insights.
-- Generated **charts** based on the pivot tables.
 
 ### 4. Data Visualization in Excel
+- Created **three pivot tables** to summarize key insights.
+- Generated **charts** based on the pivot tables.
 - Designed a **separate sheet** for the visualization dashboard.
 - Integrated the pivot tables and charts.
 - Applied formatting for better readability and insights.
