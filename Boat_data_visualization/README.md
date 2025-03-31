@@ -57,11 +57,9 @@ This project focuses on cleaning and visualizing a dataset related to boats. We 
 - Implement machine learning models for predictive analytics on boat sales and usage trends.
 
 ## Contributors
-- **[Your Name]** – Data Processing & Visualization
-- **[Other Contributors]** – SQL Data Cleaning, Python Scripting
+- **[Msizi Mthethwa]** – Data Processing & Visualization
+- **[Msizi Mthethwa]** – SQL Data Cleaning, Python Scripting
 
-## License
-This project is licensed under the **MIT License**.
 
 ---
 Feel free to contribute or suggest improvements!
