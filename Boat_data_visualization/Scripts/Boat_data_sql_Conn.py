@@ -3,10 +3,10 @@ import pandas as pd
 
 # Connect to MySQL
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Sisanda5%",
-    database="boat_schema"
+    host="your_host",
+    user="your_username",
+    password="your_password",
+    database="dyour_database"
 )
 cursor = conn.cursor()
 
